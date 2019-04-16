@@ -1,0 +1,20 @@
+---
+layout: default
+title: Blog
+menu: main
+index: 8
+---
+
+<div class="row justify-content-center">
+    <div class="col-12 text-center">
+        <h2>Actus et idées</h2>
+        <hr>
+    </div>
+    <div class="col-10">
+        {%- for item in site.actus -%}
+        <h4 class="mb-0">{{item.title}}</h4>
+        <p><small><i class="fas fa-tags my-0"></i> {{ item.tags | join: ", "}}</small></p>
+        {{item.content}}
+        {%- endfor -%}
+    </div>
+</div>
