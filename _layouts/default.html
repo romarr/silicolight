@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+  <main id="main-container" class="container">
+    <header id="header-container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-3 text-left">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">FR</button>
+                <button type="button" class="btn btn-secondary">EN</button>
+              </div>
+        </div>
+        <div class="col-6 text-center">
+          <h1>Silicolight</h1>
+        </div>
+        <div class="col-3 text-right">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">FB</button>
+                <button type="button" class="btn btn-secondary">TW</button>
+                <button type="button" class="btn btn-secondary">YT</button>
+              </div>
+        </div>
+        <div class="col-12">
+          {%- include header.html -%}
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div id="content-col" class="col px-4 py-4 text-justify">
+        {{content}}
+      </div>
+    </div>
+  </main>
+  {%include footer.html%}
+  <script src="{{"/js/jquery.min.js" | prepend: site.baseurl}}"></script>
+  <script src="{{"/js/bootstrap.min.js" | prepend: site.baseurl}}"></script>
+</body>
+
+</html>

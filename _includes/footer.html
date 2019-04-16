@@ -1,0 +1,23 @@
+<footer class="footer bg-primary container pt-2">
+    <div class="row justify-content-around text-white text-center">
+        <div class="col-8">
+            <h4>A propos</h4>
+            <p>{{site.description}}</p>
+        </div>
+        <div class="col">
+            <nav class="nav flex-column">
+                <h4>Liens</h4>
+                {%- for item in site.pages -%}
+                {%- if item.menu == 'footer' -%}
+                <a class="nav-link active" href="{{ item.url | prepend: site.baseurl }}">{{item.title}}</a>
+                {%- endif -%}
+                {%- endfor -%}
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center rounded">
+            <pre class="bg-light">Silicolight  |  Just light it ! |  Powered by <a href="http://jekyllrb.com">Jekyll</a> &amp; <a href="http://snipcart.com/">Snipcart</a> |  Réalisé par <a href="mailto:co%6et%61ct%40%61rr%61%69olo%73%2eo%76h">A. Romain</a></pre>
+        </div>
+    </div>
+</footer>

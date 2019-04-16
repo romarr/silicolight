@@ -1,0 +1,33 @@
+# Site settings
+title: Silicolight
+email: contact@silicolight.com
+permalink: /:categories/:title.html
+description: > # this means to ignore newlines until "baseurl:"
+  Un Silicolight est un cache ampoule ou filtre de couleur en silicone pour lampes basse consommation ou LED.
+
+baseurl: "/silicolight" # the subpath of your site, e.g. /blog
+url: "https://romarr.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+
+# Gems et extensions
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-paginate
+exclude:
+- Dockerfile
+
+collections_dir: collections
+
+collections:
+  produits:
+  actus:
+    output: true
+    permalink: /actualites/:title
+  
+sass:
+  sass_dir: css
+  style: compressed

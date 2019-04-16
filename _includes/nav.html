@@ -1,0 +1,15 @@
+<nav class="navbar bg-primary navbar-dark">
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <a class="navbar-brand" href="{{"/index" | prepend: site.baseurl}}">Accueil</a>
+        {%- assign sorted = site.pages | sort: 'index' -%}
+        {%- for item in sorted -%}
+            {%- if item.menu == 'main' -%}
+            <li class="nav-item">
+                <a class="nav-link{%if item.url == page.url%} active{%endif%}" href="{{item.url | prepend: site.baseurl}}">{{item.title}}</a>
+            </li>
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
+
+</nav>

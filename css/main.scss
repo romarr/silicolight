@@ -1,0 +1,44 @@
+---
+---
+
+@import 'variables';
+@import 'bootstrap/bootstrap';
+@import 'bootswatch';
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/solid';
+@import 'fontawesome/brands';
+@import 'fontawesome/regular';
+
+body {
+    background: url("/silicolight/img/bg.jpg") no-repeat center fixed
+}
+.container {
+    background-color: $gray-100;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.separator {
+height: 8em;
+margin-bottom: 1rem;
+display: grid;
+    p {
+        color: $white;
+        text-align: center;
+        margin: auto 0;
+        font-size: 3em;
+        text-shadow: 0px 0px 10px $black;
+    }
+}
+
+.parallax-bg {
+background-image: url({{site.baseurl}}/img/bg.jpg);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
