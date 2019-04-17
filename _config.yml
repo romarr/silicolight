@@ -4,6 +4,7 @@ email: contact@silicolight.com
 permalink: /:categories/:title.html
 description: > # this means to ignore newlines until "baseurl:"
   Un Silicolight est un cache ampoule ou filtre de couleur en silicone pour lampes basse consommation ou LED.
+tel: 0961630916
 
 baseurl: "/silicolight" # the subpath of your site, e.g. /blog
 url: "https://romarr.github.io" # the base hostname & protocol for your site

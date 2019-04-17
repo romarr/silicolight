@@ -1,0 +1,31 @@
+<div class="col-7">
+    <div id="slider{{productIndex}}" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {%- for pic in item.photos -%}
+            <li data-target="#slider{{productIndex}}" data-slide-to="{{forloop.index0}}"
+                {%-if forloop.first-%}class="active"{%-endif-%}></li>
+            {%- endfor -%}
+        </ol>
+        <div class="carousel-inner">
+            {%- for pic in item.photos -%}
+            <div class="carousel-item{%if forloop.first%} active{%endif%}">
+                <img src="{{pic}}" class="d-block w-100">
+            </div>
+            {%- endfor -%}
+        </div>
+        <a class="carousel-control-prev" href="#slider{{productIndex}}" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slider{{productIndex}}" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="col">
+    <h5>{{item.title}}</h5>
+    <h6>{{item.description}}</h6>
+    <hr>
+    {{item.content}}
+</div>
