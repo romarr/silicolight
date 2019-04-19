@@ -6,7 +6,7 @@ thumb: img/boutique/store-classic.jpg
 photos:
   - img/boutique/0-cache ampoule filtre.jpg
   - img/boutique/0-silicolight-ampoules-compatibles.jpg
-couleurs:
+option:
   - rouge
   - orange
   - jaune

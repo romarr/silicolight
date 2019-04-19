@@ -1,4 +1,4 @@
-items:
+fr:
   - title: Qu'est ce que c'est ?
     body: "Un Silicolight est tout simplement un cache ampoule ou filtre de couleur pour ampoules basse consommation fluorescentes ou LED. Ils sont réalisés à partir de silicone translucide et souple, et permettent de créer l’ambiance parfaitement adaptée à chacun de vos moments. Colorez vos journées, tamisez vos soirées, intimisez vos nuits."
     img: img/silicolight_f1.jpg
@@ -7,4 +7,15 @@ items:
     img: img/silicolight_f2.jpg
   - title: Ambiances
     body: "Créez des ambiances colorées sans changer vos ampoules ! Rajoutez, combinez et intervertissez tout simplement vos Silicolight au gré de vos envies. En choisissant le niveau de transparence vous trouverez toujours l’éclairage parfait pour chaque occasion."
+    img: img/silicolight_f3.jpg
+
+en:
+  - title: What is it ?
+    body: "Easy to slide on, Silicolight is a color silicone cover for low-energy and led lights. Silicolight is made from flexible translucent silicone. Create a colorful atmosphere as your days and nights are evolving from focused, to relaxed, energized to romantic or intimate."
+    img: img/silicolight_f1.jpg
+  - title: How does it work ?
+    body: "Just take a Silicolight and slide it on your light bulb ! It will never be as easy, as fun and as inexpensive to create the atmosphere you want when and where you want it."
+    img: img/silicolight_f2.jpg
+  - title: Ambiances
+    body: "You create a colourful atmosphere while keeping your white bulbs, simply add, switch and swap the different Silicolights and your fantasy becomes reality! By choosing the level of transparency find the perfect lighting for any occasion"
     img: img/silicolight_f3.jpg

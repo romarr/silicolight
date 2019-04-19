@@ -6,12 +6,37 @@ description: > # this means to ignore newlines until "baseurl:"
   Un Silicolight est un cache ampoule ou filtre de couleur en silicone pour lampes basse consommation ou LED.
 tel: 0961630916
 
+facebook: https://www.facebook.com/Silicolight-119502024889476/
+twitter: https://twitter.com/silicolight
+youtube: https://www.youtube.com/channel/UCNk8zguchAIcgELv_Pycu5g
+
 baseurl: "/silicolight" # the subpath of your site, e.g. /blog
 url: "https://romarr.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 
+l18n:
+  fr:
+    profile: "Mon compte"
+    cart: "Panier"
+    links: "Liens"
+    terms: Conditions
+    termsurl: apropos
+    contact: Contact
+    contacturl: contact
+    description: > # this means to ignore newlines until "baseurl:"
+      Un Silicolight est un cache ampoule ou filtre de couleur en silicone pour lampes basse consommation ou LED.
+  en:
+    profile: "Profile"
+    cart: "Cart"
+    links: "Links"
+    terms: Terms
+    termsurl: about
+    contact: Contact
+    contacturl: about
+    description: > # this means to ignore newlines until "baseurl:"
+      Silicolight is a color silicone cover for low-energy and led lights. Silicolight is made from flexible translucent silicone.
 
 # Gems et extensions
 plugins:
@@ -25,9 +50,13 @@ collections_dir: collections
 
 collections:
   produits:
-  actus:
+  products:
+  blogen:
     output: true
-    permalink: /actualites/:title
+    permalink: /blog/en/:title
+  blogfr:
+    output: true
+    permalink: /blog/fr/:title
   
 sass:
   sass_dir: css

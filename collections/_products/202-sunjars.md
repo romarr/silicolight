@@ -1,6 +1,6 @@
 ---
 title: Sunjar
-description: Lampe solaire
+description: Sunjar lights
 pid: 202
 thumb: img/boutique/store-sunjar.jpg
 photos:

@@ -1,16 +1,16 @@
 ---
-title: Sunjar
-description: Lampe solaire
-pid: 202
-thumb: img/boutique/store-sunjar.jpg
+title: Ampoules
+description: Fluocompact light
+pid: 201
+thumb: img/boutique/store-bulbs.jpg
 photos:
   - img/boutique/0-cache ampoule filtre.jpg
   - img/boutique/0-silicolight-ampoules-compatibles.jpg
 option:
-  - Rouge-Bleu
-  - Multicolore
-poids: 600
-prix: 12.9
+  - E14
+  - E27
+poids: 15
+prix: 2.9
 dims: '20x30x10'
 ---
 

@@ -1,22 +1,22 @@
 ---
-title: Silicolight Spots
-description: Pour spots à leds
+title: Silicolight Spotlights
+description: For LED spotlights
 pid: 103
 thumb: img/boutique/store-spotlight.jpg
 photos:
   - img/boutique/0-cache ampoule filtre.jpg
   - img/boutique/0-silicolight-ampoules-compatibles.jpg
 option:
-  - rouge
+  - red
   - orange
-  - jaune
-  - bleu
-  - vert
-  - violet
-  - rose
-  - saumon
-  - blanc chaud
-  - blanc
+  - yellow
+  - blue
+  - green
+  - purple
+  - pink
+  - salmon
+  - warm white
+  - white
 poids: 15
 prix: 2.9
 dims: '20x30x10'

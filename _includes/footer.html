@@ -2,16 +2,13 @@
     <div class="row justify-content-around text-white text-center">
         <div class="col-8">
             <h4>A propos</h4>
-            <p>{{site.description}}</p>
+            <p>{{site.l18n.[page.lang].description}}</p>
         </div>
         <div class="col">
             <nav class="nav flex-column">
-                <h4>Liens</h4>
-                {%- for item in site.pages -%}
-                {%- if item.menu == 'footer' -%}
-                <a class="nav-link active" href="{{ item.url | prepend: site.baseurl }}">{{item.title}}</a>
-                {%- endif -%}
-                {%- endfor -%}
+                <h4>{{site.l18n.[page.lang].links}}</h4>
+                <a class="nav-link" href="{{site.l18n.[page.lang].termsurl}}/#terms">{{site.l18n.[page.lang].terms}}</a>
+                <a class="nav-link" href="{{site.l18n.[page.lang].contacturl}}/#contact">{{site.l18n.[page.lang].contact}}</a>
             </nav>
         </div>
     </div>

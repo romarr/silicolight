@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Boutique
+title: Store
 menu: main
 index: 5
-lang: fr
+lang: en
 ref: shop
 ---
 
 <div class="row">
     <div class="col-12 text-center">
-        <h2>Nos produits</h2>
+        <h2>Our products</h2>
         <hr>
     </div>
     <div class="col-12">
         <div class="row justify-content-around">
-            {%- for item in site.produits -%}
+            {%- for item in site.products -%}
             <div class="col-md-4">
                 <div class="card border-primary mb-3 text-center">
                     <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="{{item.thumb}}" class="card-img-top" alt="{{item.title}}"></a>
@@ -26,7 +26,7 @@ ref: shop
                             data-item-custom1-name="option"
                             data-item-custom1-options="{{item.option | join: '|'}}"
                             data-item-image="{{item.thumb}}" data-item-url="{{page.url}}" data-item-price="{{item.prix}}">
-                            <i class="fa fa-cart-plus"></i> Ajouter {{item.prix}} €
+                            <i class="fa fa-cart-plus"></i> Add to cart {{item.prix}} €
                         </button>
                     </div>
                 </div>

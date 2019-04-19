@@ -1,20 +1,20 @@
 ---
-title: Silicolight lumineux
-description: Pour ampoules basse consommation
+title: Silicolight Bright
+description: For low energy lights
 pid: 102
 thumb: img/boutique/store-classic.jpg
 photos:
   - img/boutique/0-cache ampoule filtre.jpg
   - img/boutique/0-silicolight-ampoules-compatibles.jpg
 option:
-  - rouge
+  - red
   - orange
-  - jaune
-  - bleu
-  - vert
-  - violet
-  - rose
-  - blanc
+  - yellow
+  - blue
+  - green
+  - purple
+  - pink
+  - white
 poids: 30
 prix: 3.9
 dims: '20x30x10'
