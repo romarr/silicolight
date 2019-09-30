@@ -21,6 +21,8 @@ l18n:
     profile: "Mon compte"
     cart: "Panier"
     links: "Liens"
+    cookies: Cookies
+    cookiesurl: cookies-fr
     terms: Conditions
     termsurl: apropos
     contact: Contact
@@ -31,6 +33,8 @@ l18n:
     profile: "Profile"
     cart: "Cart"
     links: "Links"
+    cookies: Cookies
+    cookiesurl: cookies-en
     terms: Terms
     termsurl: about
     contact: Contact
