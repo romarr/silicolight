@@ -17,15 +17,15 @@ ref: shop
             {%- for item in site.produits -%}
             <div class="col-md-4">
                 <div class="card border-primary mb-3 text-center">
-                    <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="{{item.thumb}}" class="card-img-top" alt="{{item.title}}"></a>
+                    <a href="#" data-toggle="modal" data-target="#mod{{forloop.index0}}"><img src="{{item.thumb}}"
+                            class="card-img-top" alt="{{item.title}}"></a>
                     <div class="card-body">
                         <h4 class="card-title">{{item.title}}</h4>
                         <p class="card-text">{{item.description}}</p>
-                        <button type="button" class="btn btn-primary snipcart-add-item"
-                            data-item-name="{{item.title}}" data-item-id="{{item.pid}}"
-                            data-item-custom1-name="option"
-                            data-item-custom1-options="{{item.option | join: '|'}}"
-                            data-item-image="{{item.thumb}}" data-item-url="{{page.url}}" data-item-price="{{item.prix}}">
+                        <button type="button" class="btn btn-primary snipcart-add-item" data-item-name="{{item.title}}"
+                            data-item-id="{{item.pid}}" data-item-custom1-name="option"
+                            data-item-custom1-options="{{item.option | join: '|'}}" data-item-image="{{item.thumb}}"
+                            data-item-url="{{page.url}}" data-item-price="{{item.prix}}">
                             <i class="fa fa-cart-plus"></i> Ajouter {{item.prix}} €
                         </button>
                     </div>
@@ -39,7 +39,7 @@ ref: shop
 {%- for item in site.produits -%}
 {%- assign productIndex = forloop.index0 -%}
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="mod{{forloop.index0}}" tabindex="-1" role="dialog" aria-labelledby="mod{{forloop.index0}}"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -49,8 +49,14 @@ ref: shop
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <span><i class="fas fa-cart-plus"></i> Quantité: </span>
+                <input type="number" value="1" maxlength="3" size="3" id="prod-qt" style="width: 5em;" />
+                <button id="my-button" type="button" class="btn btn-primary snipcart-add-item" data-dismiss="modal"
+                    data-item-quantity="1" data-item-name="{{item.title}}" data-item-id="{{item.pid}}"
+                    data-item-custom1-name="option" data-item-custom1-options="{{item.option | join: '|'}}"
+                    data-item-image="{{item.thumb}}" data-item-url="{{page.url}}" data-item-price="{{item.prix}}">
+                    <i class="fa fa-cart-plus"></i> Ajouter
+                </button>
             </div>
         </div>
     </div>
