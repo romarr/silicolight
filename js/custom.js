@@ -1,6 +1,8 @@
-const quantity = parseInt($('#prod-qt' + item.id).val(), 10);
 Snipcart.subscribe('item.adding', function (ev, item, items) {
-  if (quantity > 0) {
+  const quantity = $('#prod-qt' + item.id).val().trim();
+  if (quantity.match(/^[0-9]+$/)) {
     item.quantity = quantity;
-  } else item.quantity = 1;
+  } else {
+    item.quantity = 1;
+  }
 });
