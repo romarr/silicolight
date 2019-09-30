@@ -50,7 +50,7 @@ ref: shop
             </div>
             <div class="modal-footer">
                 <span><i class="fas fa-cart-plus"></i> Quantité: </span>
-                <input type="number" data-product-index="{{productIndex}}" value="1" maxlength="3" size="3" class="prod-qt" style="width: 5em;" />
+                <input type="number" id="prod-qt{{item.pid}}" value="1" maxlength="3" size="3" class="prod-qt" style="width: 5em;" />
                 <button id="btn{{productIndex}}" type="button" class="btn btn-primary snipcart-add-item" data-dismiss="modal"
                     data-item-name="{{item.title}}" data-item-id="{{item.pid}}"
                     data-item-custom1-name="option" data-item-custom1-options="{{item.option | join: '|'}}"

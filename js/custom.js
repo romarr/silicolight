@@ -1,4 +1,3 @@
-$('.prod-qt').change(function() {
-  const productIndex = $(this).data('product-index');
-  $('#btn' + productIndex).data('item-quantity', $(this).val());
-});
+Snipcart.subscribe('item.adding', function (ev, item, items) {
+  item.quantity = $('#prod-qt'+item.id).val();
+  });
