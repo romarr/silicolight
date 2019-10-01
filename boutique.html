@@ -32,6 +32,21 @@ ref: shop
                 </div>
             </div>
             {%- endfor -%}
+            <div class="col-12 text-right">
+                    <a href="https://facebook.com/sharer/sharer.php?u={{site.url}}{{site.baseurl}}{{page.url}}" target="_blank" rel="noopener" aria-label="">
+                        <i class="fab fa-2x fa-facebook-square"></i>
+                      </a>
+                      
+                      <!-- Twitter -->
+                      <a href="https://twitter.com/intent/tweet/?text=Cache%20ampoule%20en%20silicone%20color%C3%A9&amp;url={{site.url}}{{site.baseurl}}{{page.url}}" target="_blank" rel="noopener" aria-label="">
+                        <i class="fab fa-2x fa-twitter-square"></i>
+                      </a>
+                      
+                      <!-- E-Mail -->
+                      <a href="mailto:?subject=Cache%20ampoule%20en%20silicone%20color%C3%A9&amp;body={{site.url}}{{site.baseurl}}{{page.url}}" target="_self" rel="noopener" aria-label="">
+                        <i class="fas fa-2x fa-envelope-square"></i>
+                      </a>
+            </div>
         </div>
     </div>
 </div>
@@ -59,6 +74,6 @@ ref: shop
                 </button>
             </div>
         </div>
-    </div>
+    </div>  
 </div>
 {%-endfor-%}
