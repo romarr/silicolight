@@ -6,6 +6,9 @@ thumb: img/boutique/store-spotlight.jpg
 photos:
   - img/boutique/0-cache ampoule filtre.jpg
   - img/boutique/0-silicolight-ampoules-compatibles.jpg
+  - img/boutique/spot_saumon.jpg
+  - img/boutique/spot_blanc_chaud.jpg
+  - img/boutique/spot_bleu.jpg
 option:
   - red
   - orange

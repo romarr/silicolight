@@ -17,29 +17,47 @@ ref: shop
             {%- for item in site.products -%}
             <div class="col-md-4">
                 <div class="card border-primary mb-3 text-center">
-                    <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="{{item.thumb}}" class="card-img-top" alt="{{item.title}}"></a>
+                    <a href="#" data-toggle="modal" data-target="#mod{{forloop.index0}}"><img src="{{item.thumb}}"
+                            class="card-img-top" alt="{{item.title}}"></a>
                     <div class="card-body">
                         <h4 class="card-title">{{item.title}}</h4>
                         <p class="card-text">{{item.description}}</p>
-                        <button type="button" class="btn btn-primary snipcart-add-item"
-                            data-item-name="{{item.title}}" data-item-id="{{item.pid}}"
-                            data-item-custom1-name="option"
-                            data-item-custom1-options="{{item.option | join: '|'}}"
-                            data-item-image="{{item.thumb}}" data-item-url="{{page.url}}" data-item-price="{{item.prix}}">
+                        <button type="button" class="btn btn-primary snipcart-add-item" data-item-name="{{item.title}}"
+                            data-item-id="{{item.pid}}" data-item-custom1-name="option"
+                            data-item-custom1-options="{{item.option | join: '|'}}" data-item-image="{{item.thumb}}"
+                            data-item-url="{{page.url}}" data-item-price="{{item.prix}}">
                             <i class="fa fa-cart-plus"></i> Add to cart {{item.prix}} €
                         </button>
                     </div>
                 </div>
             </div>
             {%- endfor -%}
+            <div class="col-12 text-right">
+                <a href="https://facebook.com/sharer/sharer.php?u={{site.url}}{{site.baseurl}}{{page.url}}"
+                    target="_blank" rel="noopener" aria-label="">
+                    <i class="fab fa-2x fa-facebook-square"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a href="https://twitter.com/intent/tweet/?text=Cache%20ampoule%20en%20silicone%20color%C3%A9&amp;url={{site.url}}{{site.baseurl}}{{page.url}}"
+                    target="_blank" rel="noopener" aria-label="">
+                    <i class="fab fa-2x fa-twitter-square"></i>
+                </a>
+
+                <!-- E-Mail -->
+                <a href="mailto:?subject=Cache%20ampoule%20en%20silicone%20color%C3%A9&amp;body={{site.url}}{{site.baseurl}}{{page.url}}"
+                    target="_self" rel="noopener" aria-label="">
+                    <i class="fas fa-2x fa-envelope-square"></i>
+                </a>
+            </div>
         </div>
     </div>
 </div>
 
-{%- for item in site.produits -%}
+{%- for item in site.products -%}
 {%- assign productIndex = forloop.index0 -%}
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="mod{{forloop.index0}}" tabindex="-1" role="dialog" aria-labelledby="mod{{forloop.index0}}"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -49,14 +67,15 @@ ref: shop
                 </div>
             </div>
             <div class="modal-footer">
-                    <span><i class="fas fa-cart-plus"></i> Quantity: </span>
-                    <input type="number" id="prod-qt{{item.pid}}" value="1" maxlength="3" size="3" class="prod-qt" style="width: 5em;" />
-                    <button id="btn{{productIndex}}" type="button" class="btn btn-primary snipcart-add-item" data-dismiss="modal"
-                            data-item-quantity="1" data-item-name="{{item.title}}" data-item-id="{{item.pid}}"
-                        data-item-custom1-name="option" data-item-custom1-options="{{item.option | join: '|'}}"
-                        data-item-image="{{item.thumb}}" data-item-url="{{page.url}}" data-item-price="{{item.prix}}">
-                        <i class="fa fa-cart-plus"></i> Add to cart
-                    </button>
+                <span><i class="fas fa-cart-plus"></i> Quantity: </span>
+                <input type="number" id="prod-qt{{item.pid}}" value="1" maxlength="3" size="3" class="prod-qt"
+                    style="width: 5em;" />
+                <button id="btn{{productIndex}}" type="button" class="btn btn-primary snipcart-add-item"
+                    data-dismiss="modal" data-item-name="{{item.title}}" data-item-id="{{item.pid}}"
+                    data-item-custom1-name="option" data-item-custom1-options="{{item.option | join: '|'}}"
+                    data-item-image="{{item.thumb}}" data-item-url="{{page.url}}" data-item-price="{{item.prix}}">
+                    <i class="fa fa-cart-plus"></i> Add to cart
+                </button>
             </div>
         </div>
     </div>

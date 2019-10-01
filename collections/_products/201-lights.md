@@ -4,7 +4,7 @@ description: Fluocompact light
 pid: 201
 thumb: img/boutique/store-bulbs.jpg
 photos:
-  - img/boutique/0-cache ampoule filtre.jpg
+  - img/boutique/ampoules_bulbs.jpg
   - img/boutique/0-silicolight-ampoules-compatibles.jpg
 option:
   - E14

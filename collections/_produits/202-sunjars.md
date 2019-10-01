@@ -4,8 +4,7 @@ description: Lampe solaire
 pid: 202
 thumb: img/boutique/store-sunjar.jpg
 photos:
-  - img/boutique/0-cache ampoule filtre.jpg
-  - img/boutique/0-silicolight-ampoules-compatibles.jpg
+  - store-sunjar.jpg
 option:
   - Rouge-Bleu
   - Multicolore
