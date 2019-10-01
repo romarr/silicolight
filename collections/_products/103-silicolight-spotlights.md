@@ -20,7 +20,7 @@ option:
   - salmon
   - warm white
   - white
-poids: 15
+poids: 6
 prix: 2.9
 dims: '20x30x10'
 ---

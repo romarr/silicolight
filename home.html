@@ -16,7 +16,7 @@ ref: home
         </div>
         {%- else -%}
         <div class="carousel-item">
-                <img src="img/{{item}}" class="d-block w-100" alt="{{item}}">
+            <img src="img/{{item}}" class="d-block w-100" alt="{{item}}">
         </div>
         {%-endif-%}
         {%- endfor -%}
@@ -34,7 +34,7 @@ ref: home
 <h3 class="text-center">A colored silicone cover</h3>
 <div class="row">
     {%- for item in site.data.cards.en -%}
-    <div class="col px-0">
+    <div class="col-xs-12 col-sm-6 col-md-4 px-0">
         <div class="card border-0 mb-3">
             <img src="{{item.img}}" class="card-img-top px-2" alt="{{item.title}}">
             <div class="card-body">
@@ -47,5 +47,6 @@ ref: home
 </div>
 <hr>
 <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" title="Showcase video" src="https://www.youtube.com/embed/DyXwo-na4BU?rel=0" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" title="Showcase video" src="https://www.youtube.com/embed/DyXwo-na4BU?rel=0"
+        allowfullscreen></iframe>
 </div>

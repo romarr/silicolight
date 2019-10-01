@@ -9,7 +9,7 @@ photos:
 option:
   - E14
   - E27
-poids: 15
+poids: 90
 prix: 2.9
 dims: '20x30x10'
 ---

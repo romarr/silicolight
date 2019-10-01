@@ -18,7 +18,7 @@ option:
   - purple
   - pink
   - white
-poids: 30
+poids: 16
 prix: 3.9
 dims: '20x30x10'
 ---
