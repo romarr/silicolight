@@ -10,8 +10,8 @@ facebook: https://www.facebook.com/Silicolight-119502024889476/
 twitter: https://twitter.com/silicolight
 youtube: https://www.youtube.com/channel/UCNk8zguchAIcgELv_Pycu5g
 
-baseurl: "/silicolight" # the subpath of your site, e.g. /blog
-url: "https://romarr.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://silicolight.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
