@@ -17,7 +17,7 @@ function setSnipcartShippingMethods() {
 //     }
 
     var bulbs = Snipcart.api.items.all().filter(function(item){
-        return bulbIds.indexOf(item.pid) > -1;
+        return bulbIds.indexOf(item.id) > -1;
     });
 
     if (bulbs.length > 0) {
