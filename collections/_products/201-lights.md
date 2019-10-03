@@ -10,7 +10,7 @@ option:
   - E14
   - E27
 poids: 90
-prix: 2.9
+prix: 1.5
 dims: '20x30x10'
 ---
 
