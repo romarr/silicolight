@@ -19,7 +19,7 @@ collections:
       - {label: "Id", name: "pid", widget: "string"}
       - {label: "Miniature", name: "thumb", widget: "image"}
       - {label: "Photos", name: "photos", widget: "list", field: {label: Photo, name: photo, widget: image}}
-      - {label: "Couleurs", name: "couleurs", widget: "list", required: false}
+      - {label: "Option", name: "option", widget: "list", required: false}
       - {label: "Poids", name: "poids", widget: "number"}
       - {label: "Prix", name: "prix", widget: "string"}
       - {label: "Dimensions", name: "dims", widget: "string"}
