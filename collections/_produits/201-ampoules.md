@@ -1,6 +1,9 @@
 ---
 title: Ampoules
-description: Ampoules fluocompacte
+description: |-
+  Ampoules fluocompacte parfaitement adaptées aux Silicolight Classic.
+  13W
+  6400K équivalent à la lumière du jour (blanc froid).
 pid: 201
 thumb: img/boutique/store-bulbs.jpg
 photos:
