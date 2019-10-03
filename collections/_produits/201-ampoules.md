@@ -9,7 +9,7 @@ thumb: img/boutique/store-bulbs.jpg
 photos:
   - img/boutique/store-bulbs.jpg
   - img/boutique/0-silicolight-ampoules-compatibles.jpg
-couleurs:
+option:
   - E14
   - E27
 poids: 90
