@@ -25,5 +25,3 @@ dims: '20x30x10'
 
 Caches ampoule colorés pour ampoules basse consommation fluorescente et LED. Le Silicolight lumineux donne une lumière agréable et colorée sans trop l’atténuer.  
 Pour une couleur plus intense et un éclairage tamisé utilisez plutôt les Silicolight Classic tamisés.  
-
-Prix: **3.9 €**

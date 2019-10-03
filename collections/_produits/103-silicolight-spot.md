@@ -27,5 +27,3 @@ dims: '20x30x10'
 
 Filtres colorés spécialement conçus pour les spots à LED de 50mm de diamètre.
 Ils permettent de colorer la lumière et d’atténuer le côté agressif et froid que l’on retrouve souvent avec les spots à LED.
-
-Prix: 2.9 €
