@@ -12,7 +12,6 @@ photos:
 couleurs:
   - E14
   - E27
-  - ''
 poids: 90
 prix: '1.5'
 dims: 20x30x10
