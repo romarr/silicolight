@@ -19,7 +19,6 @@ option:
   - pink
   - salmon
   - warm white
-  - white
 poids: 6
 prix: 2.9
 dims: '20x30x10'
