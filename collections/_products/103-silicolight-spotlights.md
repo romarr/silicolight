@@ -18,6 +18,7 @@ option:
   - purple
   - pink
   - salmon
+  - white
   - warm white
 poids: 6
 prix: 2.9
