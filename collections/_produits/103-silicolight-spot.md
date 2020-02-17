@@ -18,6 +18,7 @@ option:
   - violet
   - rose
   - saumon
+  - blanc
   - blanc chaud
 poids: 6
 prix: 2.9
